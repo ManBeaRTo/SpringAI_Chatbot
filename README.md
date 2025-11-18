@@ -1,5 +1,5 @@
 # SpringAI_Chatbot
-A ChatGPT-styled Chatbot built using Java and Spring AI
+A ChatGPT-styled Chatbot built using Java and Spring AI (code cannot be displayed due to proprietary nature)
 
 - ### Chat Interface
 ![Interface](/pictures/chatboxPage.png)
