@@ -3,27 +3,26 @@ A ChatGPT-styled Chatbot built using Java and Spring AI
 
 - ### Chat Interface
 ![Interface](/pictures/chatboxPage.png)
-<p>This table uses the table layout provided by Bootstrap. We can sort the entities according to any column value as well as search for any particular Pokemon using the search bar at the top right corner.</p>
+<p>The interface was designed keeping ChatGPT's interface in mind, so that users will immediately feel at home interacting with the chatbot.</p>
 
-- ### can add / edit pokemon entries
-![Add / Edit Form](/pictures/history.png)
-<p>Here we can input / edit the values of any Pokemon we want to add to the database.</p>
+- ### Records all Conversation History
+![History Tab](/pictures/history.png)
+<p>This tab keeps a record of all the chat history which the user has initiated, so that he/she can go back to any of them, and reference / continue / delete any conversation.</p>
 
-- ### has a soft delete function
-![Delete Process](/pictures/chatInitiate.png)
-<p>The soft delete changes the status of a pokemon entity which restricts it from appearing in any of the frontend elements, although it still persists in the database.</p>
+- ### Reply Generation Process
+![Thinking process](/pictures/chatInitiate.png)
+<p>With the block reply method, the backend AI takes a couple of seconds to generate the reply, during which it displays this "thinking..." message.</p>
   
-- ### offers a popup view functionality
-![Popup View](pictures/jokeChat.png)
+- ### Asking the AI to tell us a joke
+![AI Joke](pictures/jokeChat.png)
 
-- ### performs Semantic Search
-  Using NomicAI's Ollama text embedding, we can search for a keyword, and the Pokemon having a description which closely resembles the keyword will be displayed in the order of semantic relation.
-![Semantic Search](pictures/codeExplanation.png)
-Here, we give the keyword "very hot". This outputs pokemons that have descriptions relating to heat and fire.
+- ### Asking the AI a technical question
+
+![AI Explanation](pictures/codeExplanation.png)
 
 ## Technologies Used
-* **Backend:** Java, Spring Boot
-* **Database:** PostgreSQL (with PgVector extension for embeddings)
-* **AI/Embedding Service:** Ollama (NomicAI's `nomic-embed-text` model)
+* **Backend:** Java, Spring AI
+* **Database:** PostgreSQL
+* **AI Model:** Meta Llama 4.0 (Hosted by CDAC, New Delhi)
 * **Frontend:** HTML, CSS, JavaScript, Bootstrap
 * **Build Tool:** Maven
